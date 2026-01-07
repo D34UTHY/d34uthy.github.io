@@ -1,4 +1,4 @@
 # d34uthy.github.io
-Site de portfólio com breve apresentação dos projetos
+Site de Portfolio
 
-Possui uma apresentação superficial sobre quem sou eu, meus gostos e meus projetos já finalizados.
+Acesse no GitHub Pages: https://d34uthy.github.io
