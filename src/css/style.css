@@ -71,7 +71,7 @@ ul { list-style: none; }
     padding: 15px 5%;
 }
 
-/* -- Logo Styles -- */
+/* -- Logo -- */
 .logo {
     font-family: var(--font-code);
     font-weight: 700;
@@ -170,7 +170,7 @@ ul { list-style: none; }
 .header-center h2 { font-size: 2.5rem; margin-bottom: 10px; }
 .header-center p { color: var(--text-muted); max-width: 600px; margin: 0 auto; }
 
-/* --- Hero Section --- */
+/* --- Hero --- */
 .hero {
     height: 100vh;
     display: flex;
@@ -212,7 +212,7 @@ ul { list-style: none; }
     margin-bottom: 60px;
 }
 
-/* --- ESTILOS DE BOTÕES --- */
+/* --- Botões --- */
 
 .btn {
     padding: 12px 30px;
@@ -278,7 +278,6 @@ ul { list-style: none; }
 .scroll-icon { margin-top: 10px; display: flex; flex-direction: column; align-items: center; }
 .scroll-icon i { margin-top: 5px; animation: bounce 2s infinite; color: var(--primary-color); }
 
-/* --- Grid System --- */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -286,7 +285,7 @@ ul { list-style: none; }
     width: 100%;
 }
 
-/* --- Cards (Skills & Projects) --- */
+/* --- Cards (Skills & Projetoss) --- */
 .card {
     background: rgba(14, 14, 14, 0.8);
     border: 1px solid #222;
@@ -296,7 +295,6 @@ ul { list-style: none; }
     backdrop-filter: blur(10px);
 }
 
-/* Hover do Card: Borda verde */
 .card:hover {
     border-color: var(--primary-color);
     transform: translateY(-7px);
@@ -311,7 +309,7 @@ ul { list-style: none; }
 }
 .card-header h3 { font-size: 1.2rem; }
 
-/* Ícone Padrão */
+/* Ícone */
 .icon-green {
     font-size: 1.5rem;
     color: var(--primary-color);
@@ -321,7 +319,6 @@ ul { list-style: none; }
     transition: all 0.3s ease; /* Transição suave */
 }
 
-/* Hover do Card afeta o Ícone: Fundo sólido verde + Ícone escuro */
 .card:hover .icon-green {
     background-color: var(--primary-color);
     color: var(--bg-dark); /* O ícone fica preto/escuro */
@@ -344,18 +341,17 @@ ul { list-style: none; }
     color: #ccc;
 }
 
-/* Specific Project Card Styles */
 .project-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
-/* Aplica o mesmo efeito de hover nos ícones dos projetos */
+
 .project-icon { 
     font-size: 2rem; 
     color: var(--primary-color);
-    padding: 10px; /* Adicionado padding para ficar igual ao skills */
+    padding: 10px; 
     border-radius: 8px;
     background: rgba(0, 255, 148, 0.1);
     transition: all 0.3s ease;
@@ -379,7 +375,7 @@ ul { list-style: none; }
     text-align: center;
 }
 
-/* --- Estilos para Projetos com Imagem --- */
+/* --- Projetos c imagem */
 
 .project-card.has-image {
     padding: 0; 
@@ -440,10 +436,7 @@ ul { list-style: none; }
 .project-content {
     padding: 25px;
 }
-
-/* --- Contact Section (Antigo & Novo) --- */
-
-/* Estilo Base da Caixa de Contato (Mantido para compatibilidade) */
+/* Área de Contato */
 .contact-box {
     max-width: 600px;
     margin: 0 auto;
@@ -454,19 +447,17 @@ ul { list-style: none; }
     backdrop-filter: blur(10px);
 }
 
-/* NOVA SEÇÃO DE CONTATO DIRETO (Grid de Cartões) */
 .contact-box.direct-contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    background: transparent; /* Remove o fundo do container principal */
+    background: transparent; 
     border: none;
     padding: 0;
     backdrop-filter: none;
-    max-width: 800px; /* Aumentei um pouco a largura máxima para o grid ficar bonito */
+    max-width: 800px; 
 }
 
-/* O Cartão de Contato individual */
 .contact-card {
     background: rgba(14, 14, 14, 0.6);
     border: 1px solid #333;
@@ -481,7 +472,6 @@ ul { list-style: none; }
     overflow: hidden;
 }
 
-/* Efeito Hover Estilo Hacker */
 .contact-card:hover {
     border-color: var(--primary-color);
     background: rgba(0, 255, 148, 0.05);
@@ -489,7 +479,6 @@ ul { list-style: none; }
     box-shadow: 0 5px 20px rgba(0, 255, 148, 0.1);
 }
 
-/* Ícone da esquerda (ex: logo do whats) */
 .icon-box {
     font-size: 2rem;
     color: var(--text-muted);
@@ -501,7 +490,6 @@ ul { list-style: none; }
     transform: scale(1.1);
 }
 
-/* Texto do cartão */
 .text-box h3 {
     font-size: 1.1rem;
     color: var(--text-main);
@@ -514,9 +502,8 @@ ul { list-style: none; }
     font-family: var(--font-code);
 }
 
-/* Ícone de seta na direita */
 .action-icon {
-    margin-left: auto; /* Empurra pra direita */
+    margin-left: auto; 
     color: #333;
     transition: 0.3s;
 }
@@ -526,7 +513,6 @@ ul { list-style: none; }
     transform: translateX(5px);
 }
 
-/* Estilos de input (Mantidos caso queira usar formulário no futuro) */
 .input-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -583,14 +569,14 @@ footer {
     box-shadow: 0 0 10px var(--primary-color);
 }
 
-/* Animation */
+/* Animação */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
     40% {transform: translateY(-5px);}
     60% {transform: translateY(-3px);}
 }
 
-/* --- Estilo do Hamburger (Padrão: Oculto) --- */
+/* --- Estilo do hamburger p celular --- */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -603,44 +589,36 @@ footer {
     color: var(--primary-color);
 }
 
-/* Oculta o botão "mobile" da lista no desktop */
 .mobile-btn {
     display: none;
 }
 
-/* --- Responsividade Geral (Menu, Grid e Contato Direto) --- */
+/* --- Responsividade --- */
 @media (max-width: 768px) {
     .navbar { padding: 20px; }
     
-    /* Ícone do Menu (Fica fixo no topo direito) */
     .hamburger { 
         display: block; 
         z-index: 1005; 
     }
     
-    /* Esconde botões desktop */
     .desktop-btn { display: none; }
     
-    /* Mostra botão mobile */
     .mobile-btn { display: block; margin-top: 30px; }
 
-    /* --- CONFIGURAÇÃO DA GAVETA LATERAL --- */
     .nav-links {
         position: fixed;
         top: 0;
         right: 0;
         
-        /* 50% da tela (2/4) */
         width: 50%; 
         min-width: 250px; 
         height: 100vh;
         
-        /* Design da Gaveta */
         background-color: #080808; 
         border-left: 1px solid #222;
         box-shadow: -10px 0 50px rgba(0, 0, 0, 0.9);
-        
-        /* Alinhamento */
+    
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -657,8 +635,7 @@ footer {
     .nav-links.active {
         transform: translateX(0);
     }
-
-    /* Estilo dos Links no Mobile */
+    
     .nav-links li {
         margin: 15px 0;
         width: 100%;
@@ -672,15 +649,13 @@ footer {
         transition: 0.2s;
     }
 
-    /* Efeito ao passar o mouse ou clicar */
     .nav-links a:hover {
         color: var(--primary-color);
         background: transparent;
         padding-left: 10px;
         border-left: 3px solid var(--primary-color);
     }
-
-    /* Ajuste do botão "Vamos Conversar" dentro do menu */
+    
     .nav-links .btn-nav {
         display: inline-block;
         width: auto;
@@ -691,13 +666,11 @@ footer {
         padding: 8px 15px;
     }
 
-    /* --- Ajustes Gerais do Layout Mobile --- */
     .hero h1 { font-size: 2.5rem; }
     .grid-container { grid-template-columns: 1fr; }
     .input-group { grid-template-columns: 1fr; }
     .footer-content { flex-direction: column; gap: 15px; text-align: center; }
 
-    /* Botões da Hero */
     .hero-btns {
         flex-direction: column;
         width: 100%;
@@ -707,12 +680,12 @@ footer {
     .hero-btns .btn { width: 100%; justify-content: center; }
     .btn:hover, .btn-solid:hover, .btn-outline:hover { transform: translateY(-3px); }
 
-    /* --- Responsividade do Contato Direto --- */
     .contact-box.direct-contact {
-        grid-template-columns: 1fr; /* Cartões empilhados no mobile */
+        grid-template-columns: 1fr;
     }
     
     .contact-card {
         padding: 20px;
     }
+
 }
