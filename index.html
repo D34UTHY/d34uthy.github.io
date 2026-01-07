@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sant'Ana | Dev e Hacker</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <span class="logo-symbol">&gt;_</span> 
+            <span class="logo-symbol">&lt;</span>Sant'Ana<span class="logo-symbol">/&gt;</span>
+        </a>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li class="mobile-btn"><a href="#contato" class="btn-nav">Vamos Conversar</a></li>
+        </ul>
+
+        <a href="#contato" class="btn-nav desktop-btn">Vamos Conversar</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="code-tag">
+            <span class="dot"></span> $ whoami
+        </div>
+        
+        <h1>Matheus <br> <span class="highlight">Sant'Ana</span></h1>
+        
+        <div class="subtitle">
+            <i class="fa-solid fa-shield-halved"></i> Desenvolvedor & Hacker Ético
+        </div>
+
+        <p class="hero-desc">
+            Construindo aplicações seguras e escaláveis. Especializado em <br>
+            desenvolvimento web moderno e práticas de segurança da informação.
+        </p>
+
+        <div class="hero-btns">
+            <a href="#projetos" class="btn btn-solid">&lt;/&gt; Ver Projetos</a>
+            <a href="#contato" class="btn btn-outline">&gt;_ Entrar em Contato</a>
+        </div>
+
+        <div class="tech-scroll">
+            <!-- <span>• React</span>
+            <span>• Node.js</span>
+            <span>• Python</span> -->
+            <div class="scroll-icon">
+                <small>scroll</small>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="header-center">
+            <div class="code-tag">&lt;/&gt; skills.list()</div>
+            <h2><span class="highlight">Habilidades</span> & Tecnologias</h2>
+            <p>Um conjunto diversificado de skills para desenvolvimento seguro e eficiente.</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-palette icon-green"></i>
+                    <h3>Front-End</h3>
+                </div>
+                <div class="tags">
+                    <span>HTML5/CSS3/JS</span> <span>React</span> <span>TypeScript</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-server icon-green"></i>
+                    <h3>Back-End</h3>
+                </div>
+                <div class="tags">
+                    <span>Node.js</span> <span>Python</span> <span>C</span> <span>Java</span> 
+                     <span>Elixir</span> <span>PostgreSQL</span> <span>MySQL</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-lock icon-green"></i>
+                    <h3>Cibersegurança</h3>
+                </div>
+                <div class="tags">
+                    <span>Pentest</span> <span>OWASP</span> <span>Análise de Vulnerabilidades</span> 
+                    <span>Criptografia</span> <span>Segurança de Rede</span> <span>Linux</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-terminal icon-green"></i>
+                    <h3>Ferramentas</h3>
+                </div>
+                <div class="tags">
+                    <span>Git</span> <span>Docker</span> <span>Microsoft</span> 
+                    <span>Burp Suite</span> <span>Wireshark</span> <span>VS Code</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <div class="header-center">
+            <div class="code-tag"><i class="fa-regular fa-folder"></i> projects.showcase()</div>
+            <h2><span class="highlight">Projetos</span> em Destaque</h2>
+            <p>Uma seleção de projetos para exemplificar minhas habilidades em desenvolvimento e segurança.</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="card project-card">
+                <div class="project-top">
+                    <i class="fa-solid fa-money-check-dollar project-icon"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/D34UTHY/BananaBank" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <h3>Banana Bank</h3>
+                <p>Sistema de API de um banco, com criação de conta, transações e autenticação. Projeto back-end, com uma parte web, porém, sem interface gráfica.</p>
+                <div class="tags small-tags">
+                    <span>Elixir</span> <span>Phoenix</span> <span>Ecto</span>
+                </div>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-top">
+                    <i class="fa-solid fa-user-doctor project-icon"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/D34UTHY/HealingProject" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <h3>Healing Project</h3>
+                <p>Sistema de agendamento de horário médico com pacientes, com cadastro de usuários. Acesse o GitHub e veja fotos do projeto em funcionamento.</p>
+                <div class="tags small-tags">
+                    <span>HTML</span> <span>CSS</span> <span>Bootstrap</span> <span>Python</span> <span>Django</span>
+                </div>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-top">
+                    <i class="fa-solid fa-book-open project-icon"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/D34UTHY/ReadingProject" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <h3>Reading Project</h3>
+                <p>Projeto realizado com base no HealingProject. Um sistema back-end de gerenciamento de livros, desenvolvido para um   processo eletivo que participei anteriormente, que permitiu minha aprovação para a próxima etapa.</p>
+                <div class="tags small-tags">
+                    <span>Python</span> <span>TypeScript</span> <span>CSS</span>
+                </div>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-top">
+                    <i class="fa-solid fa-cart-shopping project-icon"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/D34UTHY/LM-FakeStore" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <h3>Fake Store API</h3>
+                <p>Aplicação simples de uma loja virtual que consome a API da FakeStore. O projeto foi utilizado para apresentação e entrega como nota de curso.</p>
+                <div class="tags small-tags">
+                    <span>TypeScript</span> <span>JavaScript</span> <span>HTML</span>
+                </div>
+            </div>
+
+            <!-- Div para projetos que terão foto de capa -->
+            <div class="card project-card has-image">
+                <div class="project-image">
+                    <img src="./src/images/projeto1.png" alt="Preview do Projeto">
+                    <div class="image-overlay">
+                        <a href="https://github.com/D34UTHY/agencia-shelby" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://d34uthy.github.io/agencia-shelby" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <h3>Landing Page</h3>
+                    <p>Landing page estática, feita com base em uma página funcional já feita anteriormente à pedido de um cliente. Acesse o link externo para visualizar.</p>
+                    <div class="tags small-tags">
+                        <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card project-card has-image">
+                <div class="project-image">
+                    <img src="./src/images/projeto2.png" alt="Preview do Projeto">
+                    <div class="image-overlay">
+                        <a href="https://github.com/D34UTHY/admin-dashboard" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://d34uthy.github.io/admin-dashboard" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <h3>Dashboard Administrativo</h3>
+                    <p>Projeto estático baseado em um dashboard desenvolvido por mim anteriormente que colhia dados de vendas em tempo real de uma outra aplicação Web utilizaada por um cliente. Projeto conta com alternância de temas de forma fácil. Acesse o link externo para visualizar.</p>
+                    <div class="tags small-tags">
+                        <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="btn-container">
+            <a href="https://github.com/d34uthy" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> Ver Mais no GitHub</a>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="header-center">
+            <div class="code-tag">&gt;_ contact.init()</div>
+            <h2><span class="highlight">Entre</span> em Contato</h2>
+            <p>Tem um projeto em mente? Vamos conversar!</p>
+        </div>
+
+        <div class="contact-box direct-contact">    
+            <a href="https://wa.me/5517992272030" target="_blank" class="contact-card">
+                <div class="icon-box">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="text-box">
+                    <h3>WhatsApp</h3>
+                    <p>Vamos conversar agora?</p>
+                </div>
+                <i class="fa-solid fa-arrow-right action-icon"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/santana-matheus" target="_blank" class="contact-card">
+                <div class="icon-box">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="text-box">
+                    <h3>LinkedIn</h3>
+                    <p>Conecte-se profissionalmente</p>
+                </div>
+                <i class="fa-solid fa-arrow-right action-icon"></i>
+            </a>
+
+            <a href="mailto:santana.matheus2104@gmail.com" target="_blank" class="contact-card">
+                <div class="icon-box">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="text-box">
+                    <h3>E-mail</h3>
+                    <p>santana.matheus2104...</p>
+                </div>
+                <i class="fa-solid fa-arrow-right action-icon"></i>
+            </a>
+
+            <a href="https://github.com/d34uthy" target="_blank" class="contact-card">
+                <div class="icon-box">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="text-box">
+                    <h3>GitHub</h3>
+                    <p>Explore meus repositórios</p>
+                </div>
+                <i class="fa-solid fa-arrow-right action-icon"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="left">
+                <span>&gt;_</span> &lt;Sant'Ana/&gt;
+            </div>
+            <div class="center">
+                © 2026 • Feito com <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i> e muito café
+            </div>
+            <div class="right">
+                <span class="status-dot"></span> Disponível para projetos
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
