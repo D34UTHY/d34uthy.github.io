@@ -708,10 +708,11 @@ footer {
     .btn:hover, .btn-solid:hover, .btn-outline:hover { transform: translateY(-3px); }
 
     /* --- Scroll Reveal --- */
+    
     .reveal {
         opacity: 0;
         transform: translateY(30px);
-        transition: opacity 0.7s ease, transform 0.7s ease;
+        transition: opacity 0.7s ease, transform 0.7s ease !important;
     }
     .reveal.visible {
         opacity: 1;
