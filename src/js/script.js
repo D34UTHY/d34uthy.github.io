@@ -59,4 +59,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Console Easter Egg
     console.log("%c Olá, Dev! ", "background: #00ff94; color: #000; padding: 5px; border-radius: 5px; font-weight: bold;");
     console.log("Ambiente seguro carregado!")
+
+    // --- Scroll Reveal ---
+    const revealElements = document.querySelectorAll('.reveal');
+    if (revealElements.length) {
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0,
+            rootMargin: '0px 0px -80px 0px'
+        });
+        revealElements.forEach(el => revealObserver.observe(el));
+    }
 });
